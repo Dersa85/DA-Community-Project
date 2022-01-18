@@ -1,0 +1,9 @@
+
+
+<h1>Projekte</h1>
+
+<div class="projects-container" >
+    <mat-card class="project" *ngFor="let project of projects">
+        <app-project-preview [project]="project"></app-project-preview>
+    </mat-card>
+</div>

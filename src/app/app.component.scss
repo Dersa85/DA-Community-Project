@@ -1,0 +1,38 @@
+
+$header-height: 80px;
+$footer-height: 48px;
+$padding-header: 0 15rem 0 15rem;
+$padding-content: 0 15rem 0 15rem;
+$padding-footer: 0 15rem 0 15rem;
+
+.header-container {
+    height: $header-height;
+    padding: $padding-header;
+    background-color: #3f51b5;
+}
+
+.content-container {
+    min-height: calc(100vh - #{$header-height} - #{$footer-height});
+    padding: $padding-content;
+}
+
+.footer-container {
+    background-color: #aaa;
+    height: $footer-height;
+    padding: $padding-footer;
+}
+
+@media (max-width: 1200px) {
+    .header-container {
+        padding: 0 1rem 0 1rem;
+    }
+
+    .content-container {
+        padding: 0 1rem 0 1rem;
+    }
+
+    .footer-container {
+        padding: 0 1rem 0 1rem;
+    }
+}
+

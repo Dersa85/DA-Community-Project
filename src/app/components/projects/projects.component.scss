@@ -1,0 +1,14 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0 0 0;
+
+    .projects-container {
+        margin: 0 0 3rem 0;
+
+        .project + .project {
+            margin: 1rem 0 0 0;
+        }
+    }
+}
